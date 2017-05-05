@@ -33,20 +33,19 @@ defmodule ExtendingWobserver do
           name: "Bob",
           speed: 8,
           color: "Kobold Brown",
-          image: ~s(<img src="http://ffxivchocobo.com/img/colours/kobold-brown.png" />),
+          image: ~s(<img src="http://ffxivchocobo.com/img/colours/kobold-brown.png" style="width: 10px;" />),
         },
         %{
           name: "Frank",
-          speed: 876,
-          color: "Asd Brown",
-          image: ~s(<img src="http://ffxivchocobo.com/img/colours/kobold-brown.png" />),
+          speed: 6,
+          color: "Cactuar Green",
+          image: ~s(<img src="http://ffxivchocobo.com/img/colours/cactuar-green.png" style="width: 10px;" />),
         }
       ],
       frank: %{
-        name: "Frank",
-        speed: 876,
-        color: "Asd Brown",
-        image: ~s(<img src="http://ffxivchocobo.com/img/colours/kobold-brown.png" />),
+        birthday: "1999-01-01",
+        country: "Finland",
+        occupation: "Secret Agent"
       }
     }
   end
