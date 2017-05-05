@@ -49,4 +49,16 @@ defmodule ExtendingWobserver do
       }
     }
   end
+
+# Dynamic registration
+def register do
+  if Code.ensure_loaded(Wobserver) == {:module, Wobserver} do
+    Wobserver.register :page,
+                        {"Stable",
+                         :stable,
+                         &ExtendingWobserver.stable/0}
+    Wobserver.register :metric,
+                       [&ExtendingWobserver.generator/0]
+  end
+end
 end
